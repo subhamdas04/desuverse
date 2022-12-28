@@ -1,0 +1,248 @@
+:root{
+    --color1: red;
+    --color2: black;
+    --color3: green;
+    --color4: rgb(247, 0, 255);
+    --color5: orange;
+    --white: white;
+    --aqua: rgb(24, 139, 233);
+    --secondary: rgb(0, 255, 13);
+    --violet: rgb(141, 16, 224);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background: var(--color2);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 85%, 0 100%);
+}
+.container{
+    max-width: 1151px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.btn{
+    padding: 0.8rem 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.8s ease;
+}
+.flex-1{
+    flex: 1;
+}
+
+
+.btn-primary{
+    background: var(--color5);
+    color: var(--secondary);
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--color1);
+    color: var(--color1);
+}
+.btn-secondary{
+    background: var(--white);;
+    color: var(--color3);
+    border: var(--color1);
+}
+.btn-secondary:hover{
+    background: var(--color3);
+    color: var(--color1);
+}
+header nav .left a{
+    color: var(--color4);
+    text-decoration: none;
+    margin-right: 5rem;
+    text-transform: uppercase;
+    transition: all 0.8s ease;
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color: var(--white);
+}
+.hero .right h4{
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: aquamarine;
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+header nav .left a:hover{
+    color: var(--color5);
+}
+
+
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+     margin-right: 3rem;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+
+section{
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--aqua);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: red;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+section.about .social{
+    display: flex;   
+}
+section.about .social a{
+    background: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+section.about .social a:hover{
+    background: var(--color1);
+}
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+
+.section-heading{
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 4rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--violet);
+}
+.section-heading + p{
+    color: var(--color4);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.services{
+    background: grey;
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+section.services .card-wrapper .card{
+    background: white;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 1s ease;
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color: aquamarine;
+    line-height: 1.6;
+}
+section.services .card-wrapper .card:hover{
+    background: black;
+}
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+    color: beige;
+}
+
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 07), rgba(0, 0, 0, 0.7)), url(./images/camera.png);
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 80%, 0 100%);
+    padding-bottom: 15rem;
+}
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 00.5rem;
+}
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+section.reviews .slider .slide img{
+    width: 100px;
+    
+}
